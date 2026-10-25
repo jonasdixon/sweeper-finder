@@ -1,0 +1,5 @@
+component,hb_in,ivb_in,speed_mph,weight,sweeper_like
+3,14.61,-1.22,81.79,0.217,True
+1,12.34,3.95,82.22,0.178,True
+0,4.37,-0.73,84.84,0.287,False
+2,3.33,3.73,87.09,0.319,False

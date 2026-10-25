@@ -1,0 +1,145 @@
+pitcher,player_name,game_year,pitches,mean_prob,ambiguous_share,st_share,hb_in,ivb_in,speed_mph,label_gap,reason
+592836,"Walker, Taijuan",2024,247,0.355,0.672,0.899,5.577,8.417,85.055,0.544,many pitches near the boundary
+605154,"Brebbia, John",2024,515,0.504,0.629,0.0,9.09,0.456,83.094,0.504,many pitches near the boundary
+663986,"Stephan, Trevor",2023,272,0.443,0.57,0.0,8.899,2.7,85.424,0.443,many pitches near the boundary
+600917,"Leclerc, José",2023,309,0.567,0.563,0.0,7.212,5.717,82.789,0.567,many pitches near the boundary
+605154,"Brebbia, John",2023,364,0.471,0.558,0.0,8.858,0.195,82.842,0.471,many pitches near the boundary
+681982,"Anderson, Grant",2024,184,0.643,0.527,0.0,7.418,6.035,82.074,0.643,many pitches near the boundary
+661403,"Clase, Emmanuel",2023,358,0.277,0.517,0.0,7.897,1.405,91.124,0.277,many pitches near the boundary
+682842,"Uribe, Abner",2024,89,0.502,0.506,0.0,10.006,3.527,87.92,0.502,many pitches near the boundary
+592826,"Velasquez, Vince",2023,290,0.424,0.497,0.0,7.873,1.994,83.211,0.424,many pitches near the boundary
+669422,"Sauer, Matt",2024,77,0.507,0.494,1.0,7.582,7.061,85.619,0.493,many pitches near the boundary
+676428,"Hurter, Brant",2024,198,0.504,0.49,1.0,8.824,2.821,83.137,0.496,many pitches near the boundary
+607067,"Rea, Colin",2023,222,0.606,0.482,1.0,10.141,0.405,83.159,0.394,many pitches near the boundary
+663474,"McKenzie, Triston",2024,274,0.328,0.478,0.0,5.112,8.585,85.359,0.328,many pitches near the boundary
+681911,"Vesia, Alex",2024,352,0.245,0.474,0.0,7.018,4.089,84.992,0.245,many pitches near the boundary
+613534,"Adams, Austin",2024,594,0.361,0.468,0.0,9.253,-1.08,87.692,0.361,many pitches near the boundary
+690829,"Joyce, Ben",2024,82,0.313,0.463,0.0,8.704,-1.664,86.167,0.313,many pitches near the boundary
+680573,"Woods Richardson, Simeon",2024,716,0.241,0.458,0.0,6.207,7.067,86.359,0.241,many pitches near the boundary
+663574,"Santillan, Tony",2024,195,0.519,0.456,0.0,10.375,-0.569,86.746,0.519,many pitches near the boundary
+523260,"Kelly, Joe",2024,120,0.483,0.45,0.0,9.744,-0.906,90.136,0.483,many pitches near the boundary
+687830,"Gipson-Long, Sawyer",2023,107,0.563,0.449,0.0,9.615,-3.397,82.359,0.563,many pitches near the boundary
+680694,"Bradish, Kyle",2024,201,0.652,0.448,0.0,11.804,-0.173,88.231,0.652,many pitches near the boundary
+572971,"Keuchel, Dallas",2023,85,0.626,0.447,0.0,8.239,1.247,78.335,0.626,many pitches near the boundary
+686294,"Willingham, Amos",2023,140,0.496,0.443,0.0,9.236,2.044,85.129,0.496,many pitches near the boundary
+656557,"Houck, Tanner",2023,662,0.67,0.443,0.023,11.198,-2.438,83.864,0.647,many pitches near the boundary
+678495,"Rodríguez, Randy",2024,350,0.389,0.437,0.0,8.99,-1.902,84.688,0.389,many pitches near the boundary
+668933,"Ashcraft, Graham",2024,429,0.384,0.436,0.0,9.271,1.274,88.448,0.384,many pitches near the boundary
+680694,"Bradish, Kyle",2023,824,0.713,0.433,0.0,12.507,-0.091,88.066,0.713,many pitches near the boundary
+622780,"Perdomo, Angel",2023,153,0.289,0.431,0.0,6.163,4.608,83.858,0.289,many pitches near the boundary
+657376,"Schmidt, Clarke",2023,748,0.456,0.43,1.0,8.999,4.366,86.042,0.544,many pitches near the boundary
+519293,"Smith, Will",2023,433,0.394,0.43,0.0,7.08,0.462,81.052,0.394,many pitches near the boundary
+669923,"Kirby, George",2023,554,0.597,0.424,1.0,11.043,-2.455,86.245,0.403,many pitches near the boundary
+641816,"Mahle, Tyler",2023,111,0.453,0.423,0.0,8.912,-1.23,83.811,0.453,many pitches near the boundary
+607074,"Rodón, Carlos",2023,327,0.254,0.416,0.0,7.953,-0.987,85.42,0.254,many pitches near the boundary
+640462,"Puk, A.J.",2023,405,0.585,0.412,0.973,8.609,5.071,83.971,0.388,many pitches near the boundary
+622072,"Wood, Alex",2024,238,0.619,0.412,0.0,9.811,-2.829,81.362,0.619,many pitches near the boundary
+600917,"Leclerc, José",2024,384,0.721,0.411,0.0,9.199,4.293,81.995,0.721,many pitches near the boundary
+641703,"Honeywell, Brent",2024,141,0.287,0.411,0.078,8.266,2.847,85.687,0.209,many pitches near the boundary
+605513,"Turnbull, Spencer",2023,124,0.29,0.411,0.0,8.025,-1.503,83.816,0.29,many pitches near the boundary
+547973,"Chapman, Aroldis",2023,292,0.407,0.408,0.0,8.396,5.832,88.098,0.407,many pitches near the boundary
+621295,"Wittgren, Nick",2023,172,0.653,0.407,0.0,10.452,2.069,82.98,0.653,many pitches near the boundary
+668941,"Romero, JoJo",2023,126,0.603,0.405,1.0,9.875,2.59,84.363,0.397,many pitches near the boundary
+502171,"Cobb, Alex",2023,128,0.581,0.398,0.0,10.987,-3.323,86.212,0.581,many pitches near the boundary
+622663,"Severino, Luis",2023,308,0.511,0.396,0.055,10.294,-1.853,84.69,0.456,many pitches near the boundary
+661403,"Clase, Emmanuel",2024,202,0.226,0.396,0.0,7.066,2.238,91.03,0.226,many pitches near the boundary
+682842,"Uribe, Abner",2023,167,0.308,0.395,0.0,8.623,2.045,89.36,0.308,many pitches near the boundary
+666374,"Brash, Matt",2023,665,0.643,0.392,0.0,11.765,3.308,88.791,0.643,many pitches near the boundary
+670124,"Oller, Adam",2024,189,0.545,0.392,0.0,10.269,-3.999,85.528,0.545,many pitches near the boundary
+677020,"Walker, Josh",2024,82,0.309,0.39,0.0,7.279,2.975,83.894,0.309,many pitches near the boundary
+656234,"Bird, Jake",2024,203,0.541,0.389,0.044,10.4,2.975,85.429,0.496,many pitches near the boundary
+684320,"Rodríguez, Yariel",2024,424,0.493,0.389,0.0,9.226,1.995,84.579,0.493,many pitches near the boundary
+628452,"Iglesias, Raisel",2023,134,0.535,0.388,0.0,8.874,4.946,84.584,0.535,many pitches near the boundary
+571510,"Boyd, Matthew",2024,116,0.38,0.388,0.0,6.874,-3.176,79.536,0.38,many pitches near the boundary
+621363,"Poche, Colin",2024,173,0.209,0.382,0.0,5.896,3.102,83.149,0.209,many pitches near the boundary
+650496,"Mejía, J.C.",2023,92,0.271,0.38,0.0,7.535,2.242,85.255,0.271,many pitches near the boundary
+641745,"Keller, Brad",2023,232,0.741,0.379,0.095,12.039,-1.597,84.321,0.646,many pitches near the boundary
+621381,"Strahm, Matt",2023,360,0.605,0.378,0.0,9.195,4.193,83.224,0.605,many pitches near the boundary
+608718,"Suter, Brent",2023,122,0.305,0.377,0.0,5.414,-3.525,76.664,0.305,many pitches near the boundary
+571656,"Farmer, Buck",2023,414,0.479,0.377,0.0,8.329,2.955,83.07,0.479,many pitches near the boundary
+650556,"Abreu, Bryan",2023,711,0.375,0.371,0.0,9.134,-3.528,87.448,0.375,many pitches near the boundary
+592866,"Williams, Trevor",2023,479,0.33,0.37,0.152,6.923,3.33,80.914,0.177,many pitches near the boundary
+676477,"Whitlock, Garrett",2023,275,0.625,0.364,0.993,9.304,-3.972,79.605,0.368,many pitches near the boundary
+666277,"Soriano, George",2023,335,0.687,0.361,1.0,11.003,-0.188,83.3,0.313,many pitches near the boundary
+607455,"Banda, Anthony",2024,219,0.281,0.361,0.0,7.453,-1.324,85.744,0.281,many pitches near the boundary
+641329,"Baker, Bryan",2023,225,0.207,0.36,0.0,7.096,3.875,86.082,0.207,many pitches near the boundary
+666720,"Rodríguez, Yerry",2023,103,0.546,0.359,0.0,6.655,8.176,84.094,0.546,many pitches near the boundary
+686539,"Cronin, Declan",2023,103,0.476,0.359,0.097,9.929,-1.469,86.22,0.379,many pitches near the boundary
+681911,"Vesia, Alex",2023,260,0.192,0.358,0.0,7.235,3.359,85.936,0.192,many pitches near the boundary
+500779,"Quintana, Jose",2024,168,0.731,0.357,0.0,10.114,-1.751,77.905,0.731,many pitches near the boundary
+661383,"Ortega, Oliver",2023,87,0.327,0.356,0.034,6.121,5.166,84.325,0.293,many pitches near the boundary
+622098,"Smith, Drew",2023,225,0.393,0.356,0.0,8.285,2.346,84.279,0.393,many pitches near the boundary
+676534,"Faucher, Calvin",2023,152,0.527,0.355,1.0,10.836,-0.616,87.173,0.473,many pitches near the boundary
+650556,"Abreu, Bryan",2024,690,0.323,0.354,0.0,8.135,-5.861,86.202,0.323,many pitches near the boundary
+605121,"Anderson, Justin",2024,428,0.473,0.353,0.0,9.435,1.743,85.592,0.473,many pitches near the boundary
+666974,"Cano, Yennier",2024,131,0.373,0.351,0.229,8.559,0.756,87.073,0.144,many pitches near the boundary
+571656,"Farmer, Buck",2024,407,0.674,0.346,0.0,9.505,3.927,82.186,0.674,Statcast label disagrees with the mixture
+668933,"Ashcraft, Graham",2023,868,0.758,0.346,0.0,13.245,-0.351,88.259,0.758,Statcast label disagrees with the mixture
+628452,"Iglesias, Raisel",2024,192,0.696,0.344,0.0,10.778,3.56,84.2,0.696,Statcast label disagrees with the mixture
+666277,"Soriano, George",2024,205,0.405,0.341,0.976,8.379,0.403,83.987,0.571,Statcast label disagrees with the mixture
+554430,"Wheeler, Zack",2024,393,0.59,0.341,1.0,9.815,4.041,84.966,0.41,Statcast label disagrees with the mixture
+670124,"Oller, Adam",2023,154,0.765,0.338,0.0,10.996,-6.98,83.28,0.765,Statcast label disagrees with the mixture
+687924,"Aguiar, Julian",2024,95,0.685,0.337,0.0,8.328,4.931,80.32,0.685,Statcast label disagrees with the mixture
+547973,"Chapman, Aroldis",2024,300,0.537,0.337,0.0,8.962,6.332,86.989,0.537,Statcast label disagrees with the mixture
+678394,"Bello, Brayan",2024,760,0.254,0.336,0.991,7.828,-0.672,86.777,0.736,Statcast label disagrees with the mixture
+669923,"Kirby, George",2024,703,0.234,0.33,1.0,7.737,-2.562,87.197,0.766,Statcast label disagrees with the mixture
+612434,"Castro, Miguel",2023,420,0.617,0.326,0.0,10.51,1.852,83.84,0.617,Statcast label disagrees with the mixture
+630023,"Chirinos, Yonny",2024,201,0.53,0.313,0.0,8.924,4.432,85.209,0.53,Statcast label disagrees with the mixture
+650644,"Civale, Aaron",2023,118,0.763,0.297,0.017,11.559,1.801,82.445,0.746,Statcast label disagrees with the mixture
+621076,"Kaprielian, James",2023,330,0.719,0.294,0.0,9.73,3.692,80.806,0.719,Statcast label disagrees with the mixture
+502085,"Robertson, David",2024,82,0.581,0.293,0.0,10.384,-1.456,83.733,0.581,Statcast label disagrees with the mixture
+690986,"Harrison, Kyle",2023,156,0.623,0.288,0.0,9.805,-4.59,82.236,0.623,Statcast label disagrees with the mixture
+657024,"Swanson, Erik",2023,188,0.411,0.287,0.0,5.13,9.879,86.634,0.411,Statcast label disagrees with the mixture
+595897,"Burdi, Nick",2024,82,0.51,0.28,0.0,10.381,0.717,88.309,0.51,Statcast label disagrees with the mixture
+657006,"Steele, Justin",2024,608,0.817,0.273,0.0,12.313,0.864,83.272,0.817,Statcast label disagrees with the mixture
+676702,"Stratton, Hunter",2024,147,0.814,0.272,0.0,11.525,5.072,84.127,0.814,Statcast label disagrees with the mixture
+676714,"Hughes, Brandon",2024,141,0.604,0.27,0.0,6.679,5.87,81.962,0.604,Statcast label disagrees with the mixture
+672456,"Montero, Keider",2024,438,0.575,0.26,0.0,10.158,-1.19,83.585,0.575,Statcast label disagrees with the mixture
+690986,"Harrison, Kyle",2024,463,0.609,0.259,0.0,8.679,-4.576,80.589,0.609,Statcast label disagrees with the mixture
+669912,"Snead, Kirby",2023,75,0.494,0.253,0.0,8.915,-0.358,81.653,0.494,Statcast label disagrees with the mixture
+642547,"Peralta, Freddy",2024,653,0.476,0.253,0.023,7.667,2.288,81.433,0.453,Statcast label disagrees with the mixture
+672335,"Pérez, Cionel",2023,263,0.762,0.251,0.0,12.192,-5.285,83.95,0.762,Statcast label disagrees with the mixture
+657571,"Ferguson, Caleb",2024,192,0.752,0.25,0.01,8.968,-9.676,81.038,0.742,Statcast label disagrees with the mixture
+669160,"May, Dustin",2023,149,0.836,0.235,0.362,14.389,-2.96,86.268,0.473,Statcast label disagrees with the mixture
+519242,"Sale, Chris",2024,1135,0.823,0.229,0.0,10.974,-4.737,78.645,0.823,Statcast label disagrees with the mixture
+605397,"Musgrove, Joe",2023,225,0.821,0.222,0.009,11.717,-5.254,82.22,0.812,Statcast label disagrees with the mixture
+674072,"Henry, Tommy",2023,175,0.419,0.217,0.0,5.268,6.181,83.153,0.419,Statcast label disagrees with the mixture
+686651,"Stoudt, Levi",2023,79,0.846,0.215,0.0,10.586,9.219,84.03,0.846,Statcast label disagrees with the mixture
+595345,"Okert, Steven",2023,625,0.848,0.213,0.0,10.15,5.336,81.907,0.848,Statcast label disagrees with the mixture
+621381,"Strahm, Matt",2024,190,0.841,0.2,0.0,12.205,1.811,81.538,0.841,Statcast label disagrees with the mixture
+669194,"Nelson, Ryne",2023,330,0.819,0.191,0.215,12.341,-0.928,81.854,0.604,Statcast label disagrees with the mixture
+573186,"Stroman, Marcus",2023,619,0.693,0.178,0.0,11.746,-0.437,84.875,0.693,Statcast label disagrees with the mixture
+592741,"Shreve, Chasen",2023,165,0.162,0.176,0.952,4.848,2.444,83.244,0.79,Statcast label disagrees with the mixture
+519242,"Sale, Chris",2023,627,0.861,0.175,0.0,11.235,-4.386,77.822,0.861,Statcast label disagrees with the mixture
+489119,"Miley, Wade",2023,92,0.874,0.174,0.0,12.2,1.971,79.104,0.874,Statcast label disagrees with the mixture
+657006,"Steele, Justin",2023,906,0.888,0.164,0.0,14.061,-0.353,83.262,0.888,Statcast label disagrees with the mixture
+595345,"Okert, Steven",2024,365,0.898,0.151,0.0,11.089,4.311,81.005,0.898,Statcast label disagrees with the mixture
+666201,"Manoah, Alek",2023,507,0.891,0.148,0.0,12.461,0.249,80.765,0.891,Statcast label disagrees with the mixture
+666201,"Manoah, Alek",2024,120,0.912,0.142,0.0,13.483,-1.688,80.974,0.912,Statcast label disagrees with the mixture
+672335,"Pérez, Cionel",2024,323,0.903,0.139,0.0,13.593,-6.649,83.067,0.903,Statcast label disagrees with the mixture
+660593,"Reyes, Denyi",2023,82,0.904,0.134,0.0,12.192,1.706,78.538,0.904,Statcast label disagrees with the mixture
+676254,"Walker, Ryan",2023,543,0.924,0.127,0.0,14.63,1.512,83.155,0.924,Statcast label disagrees with the mixture
+607359,"Patton, Spencer",2023,89,0.889,0.124,0.0,13.281,0.789,81.4,0.889,Statcast label disagrees with the mixture
+669721,"Daniel, Davis",2024,121,0.934,0.107,0.0,12.064,6.574,81.764,0.934,Statcast label disagrees with the mixture
+676254,"Walker, Ryan",2024,546,0.925,0.103,0.0,14.884,2.61,83.892,0.925,Statcast label disagrees with the mixture
+680704,"Sandlin, Nick",2023,500,0.93,0.102,0.0,9.899,6.956,79.149,0.93,Statcast label disagrees with the mixture
+664076,"Cleavinger, Garrett",2023,99,0.902,0.081,0.0,12.312,-7.153,81.329,0.902,Statcast label disagrees with the mixture
+680704,"Sandlin, Nick",2024,349,0.949,0.069,0.0,12.033,5.816,79.422,0.949,Statcast label disagrees with the mixture
+621244,"Berríos, José",2024,832,0.951,0.056,0.0,15.091,-4.923,83.2,0.951,Statcast label disagrees with the mixture
+425844,"Greinke, Zack",2023,444,0.944,0.054,0.0,13.577,2.425,79.17,0.944,Statcast label disagrees with the mixture
+661440,"Llovera, Mauricio",2023,211,0.93,0.052,0.0,15.293,1.216,82.746,0.93,Statcast label disagrees with the mixture
+607625,"Lugo, Seth",2024,718,0.63,0.05,0.156,11.859,-1.094,82.342,0.474,Statcast label disagrees with the mixture
+687765,"Spence, Mitch",2024,807,0.95,0.05,0.0,14.795,-0.562,84.282,0.95,Statcast label disagrees with the mixture
+621244,"Berríos, José",2023,870,0.965,0.047,0.0,15.559,-5.052,82.613,0.965,Statcast label disagrees with the mixture
+608344,"Irvin, Cole",2024,447,0.965,0.043,0.0,13.502,-4.699,77.38,0.965,Statcast label disagrees with the mixture
+573186,"Stroman, Marcus",2024,793,0.468,0.035,0.0,9.7,-1.665,83.888,0.468,Statcast label disagrees with the mixture
+612434,"Castro, Miguel",2024,90,0.985,0.022,0.0,16.603,2.493,81.466,0.985,Statcast label disagrees with the mixture
+608344,"Irvin, Cole",2023,181,0.991,0.011,0.0,15.346,-5.185,77.187,0.991,Statcast label disagrees with the mixture
+628711,"Urías, Julio",2023,555,0.995,0.002,0.0,17.401,-1.912,79.225,0.995,Statcast label disagrees with the mixture
+643256,"Cimber, Adam",2024,136,1.0,0.0,0.0,16.399,13.34,73.443,1.0,Statcast label disagrees with the mixture
+643511,"Rogers, Tyler",2023,549,1.0,0.0,0.0,10.238,15.992,72.911,1.0,Statcast label disagrees with the mixture
+643511,"Rogers, Tyler",2024,356,1.0,0.0,0.0,8.875,15.361,73.581,1.0,Statcast label disagrees with the mixture
+657044,"Thompson, Ryan",2023,152,1.0,0.0,0.0,17.208,7.071,78.152,1.0,Statcast label disagrees with the mixture
+643256,"Cimber, Adam",2023,108,0.999,0.0,0.0,10.019,12.751,74.769,0.999,Statcast label disagrees with the mixture
+607755,"Vasquez, Andrew",2023,698,0.998,0.0,0.0,18.25,-3.856,80.581,0.998,Statcast label disagrees with the mixture
+657044,"Thompson, Ryan",2024,251,0.998,0.0,0.0,13.132,8.412,79.02,0.998,Statcast label disagrees with the mixture

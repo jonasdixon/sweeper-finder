@@ -1,0 +1,111 @@
+{
+ "k": 4,
+ "pool_filter_counts": {
+  "all_pitches": 1427357,
+  "slider_class": 322410,
+  "missing_shape_data": 0,
+  "implausible_speed": 19,
+  "implausible_movement": 0,
+  "modelled": 322391
+ },
+ "sweeper_like_share": 0.38219429202428107,
+ "stability_bootstrap": {
+  "ari_mean": 0.9830153656310096,
+  "ari_min": 0.9731409504447804,
+  "n_boot": 10
+ },
+ "transfer_ari_fit_on_first_season_applied_to_second": 0.9544128048381753,
+ "pooled_vs_per_hand_fit_ari": 0.9617039616221569,
+ "agreement_with_statcast_ST": {
+  "ari": 0.5243902069247142,
+  "st_share": 0.3050271254470503,
+  "sweeper_like_share": 0.38219429202428107,
+  "st_that_are_sweeper_like": 0.9026724155463809,
+  "sweeper_like_that_are_st": 0.7204178028827425
+ },
+ "integrity": {
+  "filter_counts": {
+   "all_pitches": 1427357,
+   "slider_class": 322410,
+   "missing_shape_data": 0,
+   "implausible_speed": 19,
+   "implausible_movement": 0,
+   "modelled": 322391
+  },
+  "duplicate_keys": 0,
+  "mixed_handedness_pitchers": 0,
+  "coverage": {
+   "spin_axis_present": 0.9943174592342838,
+   "arm_angle_present": 0.993207006399062,
+   "spin_rate_present": 0.9943174592342838
+  },
+  "mirror_check_hb_in": {
+   "L": {
+    "SL": 4.69,
+    "ST": 13.9,
+    "SV": 12.86
+   },
+   "R": {
+    "SL": 4.65,
+    "ST": 13.91,
+    "SV": 14.28
+   }
+  },
+  "mirror_ok": true
+ },
+ "usage_quality_slope": {
+  "pitchers": 128,
+  "slope_per_10pp": -0.09176152924504305,
+  "ci_lo_per_10pp": -0.4523038659488515,
+  "ci_hi_per_10pp": 0.29141021713257664
+ },
+ "pitcher_seasons_assessed": 377,
+ "pitcher_seasons_flagged": 8,
+ "within_pitcher_headline": [
+  {
+   "split": "all batters",
+   "versus": "all other pitches",
+   "metric": "csw",
+   "difference": 0.0296,
+   "ci_lo": 0.0238,
+   "ci_hi": 0.036,
+   "pitchers": 442
+  },
+  {
+   "split": "all batters",
+   "versus": "all other pitches",
+   "metric": "whiff",
+   "difference": 0.0975,
+   "ci_lo": 0.0884,
+   "ci_hi": 0.1071,
+   "pitchers": 442
+  },
+  {
+   "split": "all batters",
+   "versus": "all other pitches",
+   "metric": "chase",
+   "difference": 0.0362,
+   "ci_lo": 0.0272,
+   "ci_hi": 0.0442,
+   "pitchers": 442
+  },
+  {
+   "split": "all batters",
+   "versus": "all other pitches",
+   "metric": "xwobacon",
+   "difference": -0.0285,
+   "ci_lo": -0.036,
+   "ci_hi": -0.0225,
+   "pitchers": 442
+  },
+  {
+   "split": "all batters",
+   "versus": "all other pitches",
+   "metric": "rv100",
+   "difference": 0.2356,
+   "ci_lo": 0.074,
+   "ci_hi": 0.4062,
+   "pitchers": 442
+  }
+ ]
+}

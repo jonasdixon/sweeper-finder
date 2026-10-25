@@ -1,0 +1,41 @@
+split,versus,metric,difference,ci_lo,ci_hi,pitchers
+all batters,other sliders,csw,0.0063,-0.0029,0.016,270
+all batters,other sliders,whiff,0.0047,-0.0061,0.0158,270
+all batters,other sliders,chase,-0.0038,-0.0151,0.0066,270
+all batters,other sliders,xwobacon,-0.023,-0.0368,-0.0089,270
+all batters,other sliders,rv100,0.2245,-0.0705,0.5056,270
+all batters,all other pitches,csw,0.0296,0.0238,0.036,442
+all batters,all other pitches,whiff,0.0975,0.0884,0.1071,442
+all batters,all other pitches,chase,0.0362,0.0272,0.0442,442
+all batters,all other pitches,xwobacon,-0.0285,-0.036,-0.0225,442
+all batters,all other pitches,rv100,0.2356,0.074,0.4062,442
+same-handed batters,other sliders,csw,-0.0029,-0.0144,0.0073,213
+same-handed batters,other sliders,whiff,0.0142,0.0011,0.0265,213
+same-handed batters,other sliders,chase,0.0205,0.0085,0.0327,213
+same-handed batters,other sliders,xwobacon,-0.0189,-0.0318,-0.0043,213
+same-handed batters,other sliders,rv100,0.3893,-0.0238,0.7386,213
+same-handed batters,all other pitches,csw,0.0035,-0.0025,0.0089,393
+same-handed batters,all other pitches,whiff,0.1169,0.1081,0.1277,393
+same-handed batters,all other pitches,chase,0.0424,0.0333,0.052,393
+same-handed batters,all other pitches,xwobacon,-0.0351,-0.0418,-0.0263,393
+same-handed batters,all other pitches,rv100,0.2089,-0.0197,0.4057,393
+opposite-handed batters,other sliders,csw,0.0254,0.0111,0.0393,128
+opposite-handed batters,other sliders,whiff,-0.0099,-0.0257,0.0095,128
+opposite-handed batters,other sliders,chase,-0.0446,-0.0616,-0.0251,128
+opposite-handed batters,other sliders,xwobacon,-0.0248,-0.0495,-0.0004,128
+opposite-handed batters,other sliders,rv100,0.087,-0.4658,0.6667,128
+opposite-handed batters,all other pitches,csw,0.0633,0.0538,0.072,276
+opposite-handed batters,all other pitches,whiff,0.0648,0.0514,0.0792,276
+opposite-handed batters,all other pitches,chase,0.0192,0.0023,0.034,276
+opposite-handed batters,all other pitches,xwobacon,-0.0098,-0.021,0.0016,276
+opposite-handed batters,all other pitches,rv100,0.1309,-0.1292,0.3623,276
+two strikes,other sliders,csw,0.0125,0.0017,0.023,136
+two strikes,other sliders,whiff,0.014,-0.0013,0.0306,136
+two strikes,other sliders,chase,-0.0028,-0.0174,0.0126,136
+two strikes,other sliders,xwobacon,-0.0088,-0.0339,0.0163,136
+two strikes,other sliders,rv100,-0.0714,-0.6296,0.4833,136
+two strikes,all other pitches,csw,0.0266,0.0203,0.0325,303
+two strikes,all other pitches,whiff,0.0778,0.068,0.0879,303
+two strikes,all other pitches,chase,0.0225,0.0113,0.0315,303
+two strikes,all other pitches,xwobacon,-0.0235,-0.0323,-0.0154,303
+two strikes,all other pitches,rv100,0.4907,0.2101,0.7792,303
