@@ -86,3 +86,67 @@ def usage_change(table: pd.DataFrame, slope: dict, path: str, min_n: int = 75) -
     fig.tight_layout()
     fig.savefig(path, dpi=110)
     plt.close(fig)
+
+
+def feature_distributions(pool: pd.DataFrame, path: str, mixture_cut_in: float | None = None) -> None:
+    """Pre-mixture look at the shape features: does the mirroring work, and is there a gap to split?
+
+    The lower-left panel carries the argument. The sweeper category is only a boundary between two
+    groups if the break distribution dips between two humps; otherwise it is a line drawn through
+    one group.
+    """
+    from sweeper_finder import eda
+
+    fig, axes = plt.subplots(2, 2, figsize=(10.0, 7.2))
+    hands = (("R", "#1d3f63", "right-handed"), ("L", "#c2410c", "left-handed"))
+    # a whole number of lattice steps: pfx_x is rounded, so other widths add a comb of spikes
+    bins = np.arange(-24.0, 26.0, 4 * eda.BREAK_QUANTUM_IN)
+
+    ax = axes[0, 0]
+    raw = 12.0 * pd.to_numeric(pool["pfx_x"], errors="coerce")
+    for hand, color, label in hands:
+        ax.hist(raw[pool["p_throws"] == hand], bins=bins, color=color, alpha=0.6, density=True, label=label)
+    ax.set_xlabel("Horizontal break as exported, 12 * pfx_x (in)")
+    ax.set_ylabel("Density")
+    ax.set_title("Before mirroring: the hands are opposites", fontsize=10)
+    ax.legend(fontsize=8)
+
+    ax = axes[0, 1]
+    for hand, color, label in hands:
+        ax.hist(pool.loc[pool["p_throws"] == hand, "hb_in"], bins=bins, color=color, alpha=0.6,
+                density=True, label=label)
+    gap = eda.max_mirror_gap(pool)
+    ax.set_xlabel("Glove-side break after mirroring (in)")
+    ax.set_ylabel("Density")
+    ax.set_title(f"After mirroring: largest decile gap {gap['after_mirroring']:.1f} in\n"
+                 f"(was {gap['before_mirroring']:.1f} in)", fontsize=10)
+    ax.legend(fontsize=8)
+
+    ax = axes[1, 0]
+    g = eda.break_density(pool)
+    v = eda.valley(pool)
+    ax.plot(g["break_in"], g["density"], color="#1d3f63", lw=1.4)
+    if not np.isnan(v["valley_in"]):
+        ax.axvline(v["valley_in"], color="#c2410c", lw=1.4, label=f"density dip ({v['valley_in']:.1f} in)")
+        for m in (v["left_mode_in"], v["right_mode_in"]):
+            ax.axvline(m, color="grey", lw=0.8, ls=":")
+    if mixture_cut_in is not None:
+        ax.axvline(mixture_cut_in, color="#2f7d32", lw=1.4, ls="--",
+                   label=f"mixture boundary ({mixture_cut_in:.1f} in)")
+    ax.set_xlabel("Glove-side break (in)")
+    ax.set_ylabel("Density")
+    ax.set_title(f"Two humps, but a shallow dip: ratio {v['dip_ratio']:.2f}\n"
+                 "(0 = separate groups, 1 = one group)", fontsize=9)
+    ax.legend(fontsize=8)
+
+    ax = axes[1, 1]
+    curve = eda.outcome_curve(pool)
+    if len(curve):
+        ax.plot(curve["hb_in"], curve["whiff_rate"], "o-", ms=3, color="#1d3f63")
+        ax.set_ylabel("Whiff rate per swing (raw)")
+    ax.set_xlabel("Glove-side break (in)")
+    ax.set_title("Does the feature track the outcome?", fontsize=10)
+
+    fig.tight_layout()
+    fig.savefig(path, dpi=110)
+    plt.close(fig)

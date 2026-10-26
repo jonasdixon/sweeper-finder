@@ -8,6 +8,41 @@ seasons. Pitches are grouped by what they do (glove-side break, induced vertical
 velocity) with a Gaussian mixture fit without any labels. Statcast's `ST` label is used only
 afterwards, as an outside check.
 
+## Before the mixture: is there anything to split?
+
+A mixture model will return groups whether or not the data contains any. Three checks run before it
+is fit, and their output is in `reports/tables/eda_*.csv` and the panel below.
+
+![Distributions of the three shape features, and how break relates to whiffs](reports/figures/feature_distributions.png)
+
+- **Did mirroring work?** Left-handers' glove-side break is flipped so both hands share a sign. The
+  existing check compared means; this compares the full shape, decile by decile. The largest gap
+  between right- and left-handers falls from **17.4 inches before mirroring to 0.6 inches after**.
+  The two hands are now the same distribution, which is what pooling them assumes.
+- **How finely is break recorded?** Statcast exports `pfx_x` rounded to 0.01 ft, so break lives on a
+  **0.12-inch lattice** (382 distinct values). Any histogram bin that is not a whole multiple of
+  0.12 inches alternately catches two or three lattice points and produces a regular comb of
+  spikes. Every bin width here is a multiple of the lattice step. This is not cosmetic: unaligned
+  bins made the dip below look about a fifth deeper than it is.
+- **Is there a dip to cut at?** Pooled break is bimodal, with humps at **3.7 and 13.3 inches** and a
+  low point at **10.0 inches**. But the dip is shallow: density at the low point is **85% of the
+  smaller hump**, and the second hump stands only about 7% of the peak height above the dip. Under
+  heavy smoothing it disappears entirely (`eda_break_valley_sensitivity.csv`). The separation is
+  real and it is weak.
+
+The last point matters for how the headline should be read. The mixture's own boundary, found in
+three dimensions, crosses 50% at **8.9 inches of break**; the dip in the one-dimensional
+distribution sits at **10.0 inches**. Two unrelated methods landing within about an inch is good
+evidence the boundary is a property of the data rather than a round number someone picked. It is
+not evidence that sweepers and sliders are cleanly separate pitches — the two groups overlap
+heavily, which is why 144 pitcher-seasons land in the review queue and why the label should be
+treated as a probability rather than a fact.
+
+One more thing the panel shows: whiffs per swing **fall** as break increases, from 0.37 at -4
+inches to 0.30 past 15 inches. Sweeper-like pitches are not missing more bats because they sweep.
+That agrees with the within-pitcher result below, where the whiff advantage vanishes once the
+comparison is against the pitcher's other sliders.
+
 ## What it found
 
 ![Movement of slider-class pitches, coloured by sweeper probability](reports/figures/movement_map.png)
@@ -74,7 +109,7 @@ More detail: [docs/definitions.md](docs/definitions.md), [docs/requirements.md](
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -e '.[dev]'
-pytest                      # 25 tests, including a planted-shape recovery for both hands
+pytest                      # 39 tests, including planted-shape and planted-dip recovery
 sweeper-finder demo         # mixture on the packaged 2,500-pitch sample, offline
 ```
 
@@ -87,6 +122,11 @@ sweeper-finder run   --cache data/cache --out reports
 
 Tables go to `reports/tables`, figures to `reports/figures`. `notebooks/sweeper_walkthrough.ipynb`
 walks through the shape features, the fit and the first outcome comparison.
+
+Where things are: `shapes.py` builds the slider pool and mirrors left-handers, `eda.py` runs the
+checks in the section above, `mixture.py` chooses the number of components and fits them,
+`outcomes.py` and `usage.py` do the within-pitcher comparisons and the under-use tests, and
+`integrity.py` holds the assertions that stop the run if the data is not what the code assumes.
 
 ## Data
 

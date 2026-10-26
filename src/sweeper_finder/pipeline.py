@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import adjusted_rand_score
 
-from sweeper_finder import integrity, mixture, outcomes, shapes, usage, viz
+from sweeper_finder import eda, integrity, mixture, outcomes, shapes, usage, viz
 from sweeper_finder.data.statcast import load_seasons
 from sweeper_finder.mixture import SweeperMixture
 from sweeper_finder.shapes import FEATURES
@@ -26,6 +26,15 @@ def label_pitches(
     pitches: pd.DataFrame, years: tuple[int, ...], out_tables: Path
 ) -> tuple[pd.DataFrame, pd.DataFrame, SweeperMixture, dict]:
     pool, counts = shapes.slider_pool(pitches)
+
+    # Exploratory checks come before the mixture: whether the mirroring worked, how finely break is
+    # recorded, and whether the break distribution has a dip to split at all. If it does not, the
+    # sweeper category is a line through one population and nothing below means what it claims.
+    eda_report = eda.report(pool)
+    eda.feature_table(pool).to_csv(out_tables / "eda_feature_summary.csv", index=False)
+    eda.mirror_gap(pool).to_csv(out_tables / "eda_mirror_gap.csv", index=False)
+    eda.valley_sensitivity(pool).to_csv(out_tables / "eda_break_valley_sensitivity.csv", index=False)
+
     X = pool[FEATURES].to_numpy()
     first = (pool["game_year"] == years[0]).to_numpy()
     k, k_table = mixture.choose_k(X[first], X[~first])
@@ -43,8 +52,10 @@ def label_pitches(
         per_hand[sel] = SweeperMixture.fit(X[sel], k).sweeper_prob(X[sel]) >= 0.5
     ksens = mixture.k_sensitivity(X)
     ksens.to_csv(out_tables / "component_count_sensitivity.csv", index=False)
+    eda_report["mixture_boundary_in_break_in"] = eda.probability_crossing(pool)
     diag = {
         "k": k, "pool_filter_counts": counts, "sweeper_like_share": float(like.mean()),
+        "eda": eda_report,
         "stability_bootstrap": mixture.stability(X, k),
         "transfer_ari_fit_on_first_season_applied_to_second": float(transfer),
         "pooled_vs_per_hand_fit_ari": float(adjusted_rand_score(like, per_hand)),
@@ -117,6 +128,11 @@ def run(cache: str, out_dir: str, years: tuple[int, ...] = (2023, 2024)) -> dict
     pitches.loc[pool.index, "sweeper_like"] = pool["sweeper_like"]
     pitches.loc[pool.index, "sweeper_prob"] = pool["sweeper_prob"]
     viz.movement_map(pool, mix, str(figs / "movement_map.png"))
+    viz.feature_distributions(
+        pool,
+        str(figs / "feature_distributions.png"),
+        mixture_cut_in=diag["eda"]["mixture_boundary_in_break_in"],
+    )
 
     contrasts = outcome_tables(pitches, tables, figs)
     table = usage.pitcher_season_table(pitches)

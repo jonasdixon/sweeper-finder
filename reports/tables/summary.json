@@ -9,6 +9,26 @@
   "modelled": 322391
  },
  "sweeper_like_share": 0.38219429202428107,
+ "eda": {
+  "max_mirror_gap_in": {
+   "after_mirroring": 0.6,
+   "before_mirroring": 17.4
+  },
+  "break_quantisation": {
+   "distinct_values": 463,
+   "step_ft": 0.01,
+   "step_in": 0.12,
+   "distinct_break_values": 382
+  },
+  "break_valley": {
+   "left_mode_in": 3.72,
+   "right_mode_in": 13.32,
+   "valley_in": 9.96,
+   "dip_ratio": 0.8486,
+   "prominence": 0.0748
+  },
+  "mixture_boundary_in_break_in": 8.929704010797735
+ },
  "stability_bootstrap": {
   "ari_mean": 0.9830153656310096,
   "ari_min": 0.9731409504447804,

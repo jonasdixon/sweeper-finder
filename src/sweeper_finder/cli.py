@@ -41,3 +41,7 @@ def main(argv=None) -> int:
     else:
         print(pipeline.run(a.cache, a.out, tuple(a.years)))
     return 0
+
+
+if __name__ == "__main__":  # python -m sweeper_finder.cli
+    raise SystemExit(main())
